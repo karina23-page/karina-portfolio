@@ -1,0 +1,634 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
+
+/* ==========================================
+   RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:"Manrope",sans-serif;
+
+    background:#F9FCF8;
+    color:#2D4430;
+
+    line-height:1.8;
+
+}
+
+
+/* ==========================================
+   LINKS
+========================================== */
+
+a{
+
+    text-decoration:none;
+
+    color:#355C3B;
+
+    transition:.3s;
+
+}
+
+a:hover{
+
+    color:#8ACB65;
+
+}
+
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    background:rgba(255,255,255,.82);
+
+    backdrop-filter:blur(12px);
+
+    z-index:1000;
+
+    border-bottom:1px solid rgba(78,139,88,.15);
+
+}
+
+nav{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:20px;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:45px;
+
+    list-style:none;
+
+}
+
+nav a{
+
+    font-weight:500;
+
+}
+
+
+/* ==========================================
+   GENERAL
+========================================== */
+
+section{
+
+    padding:120px 20px;
+
+}
+
+.container{
+
+    max-width:1100px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+h1{
+
+    font-size:68px;
+
+    margin-bottom:10px;
+
+}
+
+h2{
+
+    font-size:42px;
+
+    color:#355C3B;
+
+    margin-bottom:30px;
+
+}
+
+h3{
+
+    font-size:26px;
+
+    color:#4E8B58;
+
+    margin-bottom:25px;
+
+}
+
+p{
+
+    font-size:18px;
+
+    color:#566C58;
+
+    margin-bottom:20px;
+
+}
+
+.architecture-flow{
+
+    max-width:320px;
+
+    margin:50px auto;
+
+}
+
+.arch-box {
+
+    width: 280px;
+
+    padding: 20px;
+
+    background: #F4FAEE;
+
+    border: 2px solid #9ED37A;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    color: #355C3B;
+
+    font-weight: 600;
+
+    font-size: 18px;
+
+    box-shadow: 0 12px 30px rgba(78,139,88,.12);
+
+    transition: .3s;
+
+}
+
+.arch-box:hover{
+
+    transform: translateY(-5px);
+
+    background: #EAF6DE;
+
+    box-shadow: 0 18px 40px rgba(78,139,88,.18);
+
+}
+
+.arrow{
+
+    font-size:34px;
+
+    color:#7CBF67;
+
+}
+
+
+
+/* ==========================================
+   HOME
+========================================== */
+
+#home{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    padding-top:160px;
+
+    align-items:flex-start;
+
+    background-image:url("../assets/forest2.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    position:relative;
+
+}
+
+#home{
+
+    position:relative;
+
+}
+
+
+#home::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        rgba(12,28,18,.55),
+        rgba(12,28,18,.45)
+    );
+
+}
+#home .container{
+
+    position:relative;
+
+    z-index:2;
+
+}
+#home h1 {
+
+    font-size:4rem;
+
+    font-weight:700;
+
+    letter-spacing:-2px;
+
+    line-height:1.05;
+
+    margin-bottom:18px;
+
+    color: #ffffff;
+
+    text-shadow:
+        0 2px 4px rgba(24,65,38,.55),
+        0 8px 20px rgba(24,65,38,.45);
+
+}
+
+#home h2 {
+
+    font-size:1.8rem;
+
+    font-weight:500;
+
+    opacity:.92;
+
+    margin-bottom:30px;
+    color: #ffffff;
+
+    text-shadow:
+        0 2px 4px rgba(24,65,38,.55),
+        0 6px 15px rgba(24,65,38,.45);
+
+}
+
+#home p{
+
+    font-size:1rem;
+
+    max-width:650px;
+
+    margin-bottom: 28px;
+
+    margin:0 auto 18px;
+
+    line-height:1.8;
+
+    color:rgba(255,255,255,.90);
+
+}
+
+.profile-photo{
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    border:4px solid rgba(255,255,255,.45);
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.35);
+
+    margin-bottom:35px;
+
+}
+
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.button{
+
+    display:inline-block;
+
+    margin-top:40px;
+
+    background:#043500;
+
+    color:white;
+
+    padding:16px 36px;
+
+    border-radius:999px;
+
+    font-weight:600;
+
+    box-shadow:0 12px 25px rgba(6, 70, 18, 0.35);
+
+}
+
+.button:hover{
+
+    transform:translateY(-3px);
+
+    background:#45815b;
+
+}
+
+
+
+/* ==========================================
+   CARDS
+========================================== */
+
+.card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:45px;
+
+    margin-top:30px;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+    border:1px solid #D7EACF;
+
+}
+
+
+/* ==========================================
+   PROJECTS
+========================================== */
+
+article{
+
+    background:#2A4432;
+
+    border-radius:22px;
+
+    padding:35px;
+
+    margin-bottom:35px;
+
+    transition:.3s;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.20);
+
+}
+
+article:hover{
+
+    transform:translateY(-6px);
+
+}
+
+article h3{
+
+    color:#BFD8B8;
+
+}
+
+
+/* ==========================================
+   ARCHITECTURE
+========================================== */
+
+.diagram{
+
+    margin:35px 0;
+
+    background:#EEF7E6;
+
+    border:2px solid #8ACB65;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    overflow-x:auto;
+
+}
+
+pre{
+
+    color:#4fa55c;
+
+    font-size:15px;
+
+    text-align:left;
+
+}
+
+
+/* ==========================================
+   SKILLS
+========================================== */
+
+#skills ul{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:18px;
+
+    list-style:none;
+
+    margin-top:40px;
+
+}
+
+#skills li{
+
+    background:white;
+
+    padding:22px;
+
+    border-radius:15px;
+
+    transition:.3s;
+
+}
+
+#skills li:hover{
+
+    background:#EEF7E6;
+
+    transform:translateY(-4px);
+
+}
+
+
+/* ==========================================
+   RESUME
+========================================== */
+
+#resume .button{
+
+    margin-top:15px;
+
+}
+
+
+/* ==========================================
+   CONTACT
+========================================== */
+
+#contact p{
+
+    margin-bottom:15px;
+
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+
+footer{
+
+    text-align:center;
+
+    padding:35px;
+
+    background:#043500;
+
+    color:rgb(255, 255, 255);
+
+}
+
+/* ADD THIS: Targets any paragraph text inside the footer */
+footer p {
+    color: #ffffff;
+    opacity: 0.8; /* Keeps it clean but perfectly visible */
+    margin-bottom: 0;
+}
+
+/* ADD THIS: Forces all navigation and contact links inside the footer to be white */
+footer a {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* ADD THIS: Gives the links a smooth color change when hovered */
+footer a:hover {
+    color: #D7EACF; 
+}
+
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#18281E;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#4F7252;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#78A55A;
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:900px){
+
+    nav ul{
+
+        gap:18px;
+
+        flex-wrap:wrap;
+
+    }
+
+    h1{
+
+        font-size:46px;
+
+    }
+
+    h2{
+
+        font-size:34px;
+
+    }
+
+    h3{
+
+        font-size:22px;
+
+    }
+
+    .card{
+
+        padding:30px;
+
+    }
+
+    .profile-photo{
+
+        width:140px;
+
+        height:140px;
+
+    }
+
+}
