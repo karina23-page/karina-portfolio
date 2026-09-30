@@ -2,7 +2,7 @@
 
 Personal portfolio website showcasing my DevOps projects, technical skills, and hands-on experience.
 
-🌐 **Portfolio:** https://karina23-page.github.io/
+🌐 **Portfolio:** https://karina23-page.github.io/karina-portfolio/
 
 ## About
 
@@ -60,7 +60,7 @@ I introduced realistic failures into the DevOps environment and investigated eac
 
 ## Portfolio
 
-🌐 https://karina23-page.github.io/
+🌐 https://karina23-page.github.io/karina-portfolio/
 
 ## Contact
 
